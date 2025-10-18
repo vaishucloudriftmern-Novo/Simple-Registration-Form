@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 flex justify-center items-center h-screen">
+  <div class="bg-white p-6 rounded-lg shadow-md w-80">
+    <h2 class="text-center text-xl font-semibold mb-4">Simple Registration Form</h2>
+    <form id="registerForm">
+      <input type="text" id="name" placeholder="Name" class="w-full p-2 mb-2 border border-gray-300 rounded">
+      <div id="nameError" class="text-red-500 text-sm mb-2 h-4"></div>
+
+      <input type="email" id="email" placeholder="Email" class="w-full p-2 mb-2 border border-gray-300 rounded">
+      <div id="emailError" class="text-red-500 text-sm mb-2 h-4"></div>
+
+      <input type="password" id="password" placeholder="Password" class="w-full p-2 mb-2 border border-gray-300 rounded">
+      <div id="passwordError" class="text-red-500 text-sm mb-2 h-4"></div>
+
+      <button type="submit" id="submitBtn" disabled class="w-full bg-green-500 text-white p-2 rounded disabled:bg-gray-400">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
